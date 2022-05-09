@@ -1,8 +1,7 @@
 import mongoose from 'mongoose';
-const { Schema } = require('mongoose')
 
 
-const playerSchema = new Schema({
+const playerSchema = new mongoose.Schema({
     firstname: {
         type: String,
         required: true,
@@ -16,7 +15,7 @@ const playerSchema = new Schema({
         },       
 
     age: {
-        type: Int,
+        type: Number,
         required: true,
         trim: true,
         },
@@ -33,6 +32,6 @@ const playerSchema = new Schema({
     }
 });
 
-const players = mongoose.model('players', playerSchema);
+const player = mongoose.model('players', playerSchema);
 
-export default players; 
+export default player; 

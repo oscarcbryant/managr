@@ -1,4 +1,9 @@
-const getPlayers = router.get('/', async (req, res)=> {
+import express from 'express';
+const router = express.Router();
+
+import player from '../models/players.js';
+
+export const getPlayers = router.get('/', async (req, res)=> {
     try {
         const allPlayers = await player.find();
         res.status(200).json(allPlayers);
