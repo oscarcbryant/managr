@@ -1,0 +1,10 @@
+#links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    justify-content: space-around;
+}
+
+.navbar {
+    background-color: grey;
+}

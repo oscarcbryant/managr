@@ -1,7 +1,7 @@
 // import { findByLabelText } from '@testing-library/react';
 import React from 'react';
 import { Link } from "react-router-dom";
-// import './styling/navbar.css'
+import './styles/Navbar.css'
 
 function Navbar() {
     return (
