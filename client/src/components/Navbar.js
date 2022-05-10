@@ -8,7 +8,7 @@ function Navbar() {
       <nav className="navbar">
             <div id="links">
                 <h4>
-                    <Link to = "/about">About Us</Link>
+                    <Link to = "./pages/Login">Login</Link>
                 </h4>
                 <h4>
                     <Link to = "./pages/Signup">Signup</Link>
