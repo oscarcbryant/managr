@@ -1,0 +1,27 @@
+{
+  "name": "managr",
+  "version": "1.0.0",
+  "description": "a full stack application which helps local sports teams manage their amature clubs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server --ignore client",
+    "develop": "concurrently \"cd server && npm run start\" \"cd client && npm start\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "seed": "cd server && npm run seed",
+    "build": "cd client && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oscarcbryant/managr.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oscarcbryant/managr/issues"
+  },
+  "homepage": "https://github.com/oscarcbryant/managr#readme",
+  "dependencies": {
+    "concurrently": "^7.1.0"
+  }
+}

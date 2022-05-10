@@ -1,7 +1,7 @@
 import express from 'express';
 const router = express.Router();
 
-import player from '../models/players.js';
+import player from '../models/Player.js';
 
 export const getPlayers = router.get('/', async (req, res)=> {
     try {
