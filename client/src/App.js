@@ -11,23 +11,24 @@ import Signup from './pages/Signup';
 import Login from './pages/Login';
 
 
+
 function App() {
   return (
     <Router>
       <Header />
-       <Navbar />
-          <Routes>
-            <Route 
-              path="/login" 
-              element={<Login />}
-            />
-            <Route 
-              path="/signup" 
-              element={<Signup />}
-            />
-          </Routes>
-        <Body />
-        <Player />
+        <Navbar />
+            <Routes>
+                <Route 
+                  path="/login" 
+                  element={<Login />}
+                />
+                <Route 
+                  path="/pages/Signup" 
+                  element={<Signup />}
+                />
+              </Routes>
+            <Body />
+          <Player />
         <Create />
   </Router>
   );

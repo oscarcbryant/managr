@@ -11,7 +11,7 @@ function Navbar() {
                     <Link to = "/about">About Us</Link>
                 </h4>
                 <h4>
-                    <Link to = "/logout">Logout</Link>
+                    <Link to = "./pages/Signup">Signup</Link>
                 </h4>
                 <h4>
                     <Link to = "/contact">Create team</Link>
