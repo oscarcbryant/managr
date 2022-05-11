@@ -4,7 +4,8 @@ import React from 'react';
 function Home() {
     return (
         <div className = 'Home'>
-            <p>Your one stop shop for making sports club management easier than 1, 2, 3!</p>
+            <h1>Welcome to: managr</h1>
+            <h3>Make managing your team as easy as 1, 2, 3!</h3>
         </div>
     );
   }

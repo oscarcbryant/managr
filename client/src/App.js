@@ -9,14 +9,16 @@ import Player from './components/showPlayers/showPlayers.js';
 import Create from './components/createPlayers/createPlayers.js'
 import Signup from './pages/Signup';
 import Login from './pages/Login';
+import AppBar from './components/AppBar'
 
 
 
 function App() {
   return (
     <Router>
-      <Header />
+      <AppBar />
         <Navbar />
+        <Home />
             <Routes>
                 <Route 
                   path="/pages/Login" 
@@ -27,7 +29,6 @@ function App() {
                   element={<Signup />}
                 />
               </Routes>
-            <Home />
           {/* <Player />
         <Create /> */}
   </Router>
