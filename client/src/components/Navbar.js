@@ -17,7 +17,7 @@ function Navbar() {
                     <Link to = "/contact">Create team</Link>
                 </h4>
                 <h4>
-                    <Link to = "/Contact">Contact Us</Link>
+                    <Link to = "./pages/Home">Home</Link>
                 </h4>
             </div>
       </nav>
