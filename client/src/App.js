@@ -5,7 +5,6 @@ import Header from './components/Header';
 import Navbar from './components/Navbar';
 import Landing from './pages/Landing';
 import Footer from './components/footer';
-import Player from './components/showPlayers/showPlayers.js';
 import Create from './components/createPlayers/createPlayers.js'
 import Signup from './pages/Signup';
 import Login from './pages/Login';
