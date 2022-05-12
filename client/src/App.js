@@ -10,6 +10,7 @@ import Signup from './pages/Signup';
 import Login from './pages/Login';
 import AppBar from './components/AppBar'
 import Home from './pages/Home';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 

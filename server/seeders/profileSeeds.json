@@ -1,0 +1,53 @@
+[
+    {
+      "name": "oscar",
+      "email": "oscar@email.com",
+      "password": "123456"
+    },
+    {
+      "name": "lisa",
+      "email": "lisa@email.com",
+      "password": "123456"
+    },
+    {
+      "name": "max",
+      "email": "max@email.com",
+      "password": "123456"
+    },
+    {
+      "name": "bethany",
+      "email": "bethany@email.com",
+      "password": "123456"
+    },
+    {
+      "name": "joseph",
+      "email": "joseph@email.com",
+      "password": "123456"
+    },
+    {
+      "name": "ricky",
+      "email": "ricky@email.com",
+      "password": "123456"
+    },
+    {
+      "name": "cameron",
+      "email": "cameron@email.com",
+      "password": "123456"
+    },
+    {
+      "name": "samantha",
+      "email": "samantha@email.com",
+      "password": "123456"
+    },
+    {
+      "name": "trish",
+      "email": "trish@email.com",
+      "password": "123456"
+    },
+    {
+      "name": "kylie",
+      "email": "kylie@email.com",
+      "password": "123456"
+    }
+  ]
+  
