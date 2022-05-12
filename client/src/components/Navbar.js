@@ -3,6 +3,8 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import './styles/Navbar.css'
 
+import Auth from '../utils/auth';
+
 function Navbar() {
     return (
       <nav className="navbar">
@@ -18,6 +20,9 @@ function Navbar() {
                 </h4>
                 <h4>
                     <Link to = "./pages/Home">Home</Link>
+                </h4>
+                <h4>
+                    <Link to = "./pages/Landing" onClick={() => {Auth.logout()}}>Logout</Link>
                 </h4>
             </div>
       </nav>
