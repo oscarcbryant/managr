@@ -3,6 +3,7 @@ import { useQuery } from '@apollo/client';
 import { Link } from 'react-router-dom';
 import { Button } from 'react-bootstrap';
 import Player from '../components/showPlayers/showPlayers.js';
+import Create from '../components/createPlayers/createPlayers.js';
 
 
 // import TeamList from '../components/TeamList';
@@ -16,7 +17,11 @@ const Home = () => {
   const profiles = data?.profiles || [];
 const [showPlayer, setShowPlayer] = useState(false);
 
-  const onClick = () => setShowPlayer(!showPlayer);
+  const showPlayersClick = () => setShowPlayer(!showPlayer);
+
+  const [showCreatePlayer, setShowCreatePlayer] = useState(false);
+
+  const showCreateClick = () => setShowCreatePlayer(!showCreatePlayer);
 
   return (
     <main>
@@ -26,11 +31,13 @@ const [showPlayer, setShowPlayer] = useState(false);
         <p>What would you like to do?</p>
        
         {showPlayer ? <Player /> : null}
-        <button onClick={onClick}>
+        {showCreatePlayer ? <Create /> : null}
+        <button onClick={showPlayersClick}>
             
         { showPlayer ? 'Hide Players' : 'Show players'}
             </button>
-        <button>Create New Team!</button>
+        <button onClick={showCreateClick}>{showCreatePlayer ? 'Hide Create Player' : 'Show Create Player'}
+        </button>
         </div>
       </div>
     </main>

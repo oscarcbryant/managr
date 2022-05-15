@@ -29,3 +29,15 @@ export const QUERY_ME = gql`
     }
   }
 `;
+
+export const QUERY_PLAYERS = gql`
+query getPlayers {
+  players{
+    _id
+    firstname
+    surname
+    email
+    age
+    position
+  }
+}`

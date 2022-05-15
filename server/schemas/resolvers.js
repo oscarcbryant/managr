@@ -1,6 +1,7 @@
 const { AuthenticationError } = require('apollo-server-express');
 const { Profile } = require('../models');
 const { signToken } = require('../utils/auth');
+const { Player } = require('../models');
 
 const resolvers = {
     Query: {
@@ -18,6 +19,15 @@ const resolvers = {
         }
         throw new AuthenticationError('You need to be logged in!');
         },
+
+    players: async () => {
+        return Player.find().sort({ createdAt: -1 });
+    },
+
+    player: async (parent, { playerId }) => {
+        return Player.findOne({ _id: playerId });
+    
+    }
     },
 
     Mutation: {
@@ -43,6 +53,10 @@ const resolvers = {
         const token = signToken(profile);
         return { token, profile };
     },
+
+    createPlayer: async (parent, { firstname, surname, age, email, position }) => {
+        return Player.create({ firstname, surname, age, email, position })
+    }
 
     },
 };

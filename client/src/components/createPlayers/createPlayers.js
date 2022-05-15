@@ -4,21 +4,22 @@ import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 
 
-export default function CreatePlayers() {
+export default function CreatePlayer() {
 
 const [player, setPlayers] = useState({
 
-    Firstname: '',
-    Surname: '',
+    firstname: '',
+    surname: '',
     email: '',
-    Age: 0,
-    Position: ''
+    age: 0,
+    position: ''
 
 });
 
-const createPlayers = () => {
-
+const createPlayer = () => {
+console.log(player);
 }
+
 
   return (
 <>
@@ -32,20 +33,21 @@ const createPlayers = () => {
       autoComplete="off"
     >
         
-      <TextField id="outlined-basic" label="Firstname" variant="outlined" value={player.Firstname} 
-      onChange={(event) => setPlayers({ ...player, Firstname: event.target.value})}/>
-      <TextField id="outlined-basic" label="Surname" variant="outlined" value={player.Surname}
-      onChange={(event) => setPlayers({ ...player, Surname: event.target.value})}/>
+      <TextField id="outlined-basic" label="Firstname" variant="outlined" value={player.firstname} 
+      onChange={(event) => setPlayers({ ...player, firstname: event.target.value})}/>
+      <TextField id="outlined-basic" label="Surname" variant="outlined" value={player.surname}
+      onChange={(event) => setPlayers({ ...player, surname: event.target.value})}/>
       <TextField id="outlined-basic" label="Email" variant="outlined" value={player.email}
-      onChange={(event) => setPlayers({ ...player, Email: event.target.value})}/>
-      <TextField id="outlined-basic" label="Age" variant="outlined" value={player.Age}
-      onChange={(event) => setPlayers({ ...player, Age: event.target.value})}/>
-      <TextField id="outlined-basic" label="Position" variant="outlined" value={player.Position}
-      onChange={(event) => setPlayers({ ...player, Position: event.target.value})}/>
+      onChange={(event) => setPlayers({ ...player, email: event.target.value})}/>
+      <TextField id="outlined-basic" label="Age" variant="outlined" value={player.age}
+      onChange={(event) => setPlayers({ ...player, age: event.target.value})}/>
+      <TextField id="outlined-basic" label="Position" variant="outlined" value={player.position}
+      onChange={(event) => setPlayers({ ...player, position: event.target.value})}/>
 
-      <Button variant="contained" onClick={createPlayers}>Sign them up!
+      <Button variant="contained" onClick={createPlayer}>Sign them up!
       </Button>
     </Box>
     </>
   );
-}
+
+    }

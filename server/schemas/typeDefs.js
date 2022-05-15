@@ -8,6 +8,15 @@ const typeDefs = gql`
     password: String
   }
 
+  type Player {
+    _id: ID
+    firstname: String
+    surame: String
+    email: String
+    age: Number
+    position: String
+  }
+
   type Auth {
     token: ID!
     profile: Profile
@@ -23,6 +32,7 @@ const typeDefs = gql`
   type Mutation {
     addProfile(name: String!, email: String!, password: String!): Auth
     login(email: String!, password: String!): Auth
+    createPlayer(firstname: String, surname: String, email: String, age: Number, position: String)
 
     addSkill(profileId: ID!, skill: String!): Profile
     removeProfile: Profile
