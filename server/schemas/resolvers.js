@@ -54,8 +54,8 @@ const resolvers = {
         return { token, profile };
     },
 
-    createPlayer: async (parent, { firstname, surname, age, email, position }) => {
-        return Player.create({ firstname, surname, age, email, position })
+    CreatePlayer: async (parent, { firstname, surname, age, email, position }) => {
+        return Player.create({ firstname, surname, age, email, position });
     }
 
     },

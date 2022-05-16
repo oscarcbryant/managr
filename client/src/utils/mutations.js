@@ -27,8 +27,8 @@ export const LOGIN_USER = gql`
   }
 `
 export const ADD_PLAYER = gql`
-mutation createPlayer($firstname: String, $surname: String, $email: String, $age: Number, $position: String) {
-  createPlayer(firstname: $firstname, surname: $surname, email: $email, age: $age, position: $position) {
+mutation CreatePlayer($firstname: String!, $surname: String!, $email: String!, $age: String!, $position: String!) {
+  CreatePlayer(firstname: $firstname, surname: $surname, email: $email, age: $age, position: $position) {
     _id
     firstname
     surname

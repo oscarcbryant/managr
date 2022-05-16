@@ -3,12 +3,11 @@ import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import { ADD_PLAYER } from '../../utils/mutations';
-import { useMutation } from '@apollo/client';
+import { useQuery, useMutation } from '@apollo/client';
 
 
-export default function CreatePlayer() {
-
-const [player, setPlayers] = useState({
+const CreatePlayerForm = () => {
+const [player, setPlayersState] = useState({
 
     firstname: '',
     surname: '',
@@ -18,12 +17,26 @@ const [player, setPlayers] = useState({
 
 });
 
-const createPlayer = () => {
-console.log(player);
-}
+const [CreatePlayer, {error}] = useMutation(ADD_PLAYER);
+
+const handleFormSubmit = async (event) => {
+  event.preventDefault();
+  console.log(player);
+
+  try {
+    const { data } = CreatePlayer({
+      variables: { ...player },
+    })
+  }
+
+  catch (err) {
+    console.error(err);
+  }
+};
 
 
-  return (
+
+return (
 <>
 <h2>Create Player</h2>
     <Box
@@ -36,20 +49,22 @@ console.log(player);
     >
         
       <TextField id="outlined-basic" label="Firstname" variant="outlined" value={player.firstname} 
-      onChange={(event) => setPlayers({ ...player, firstname: event.target.value})}/>
+      onChange={(event) => setPlayersState({ ...player, firstname: event.target.value})}/>
       <TextField id="outlined-basic" label="Surname" variant="outlined" value={player.surname}
-      onChange={(event) => setPlayers({ ...player, surname: event.target.value})}/>
+      onChange={(event) => setPlayersState({ ...player, surname: event.target.value})}/>
       <TextField id="outlined-basic" label="Email" variant="outlined" value={player.email}
-      onChange={(event) => setPlayers({ ...player, email: event.target.value})}/>
+      onChange={(event) => setPlayersState({ ...player, email: event.target.value})}/>
       <TextField id="outlined-basic" label="Age" variant="outlined" value={player.age}
-      onChange={(event) => setPlayers({ ...player, age: event.target.value})}/>
+      onChange={(event) => setPlayersState({ ...player, age: event.target.value})}/>
       <TextField id="outlined-basic" label="Position" variant="outlined" value={player.position}
-      onChange={(event) => setPlayers({ ...player, position: event.target.value})}/>
+      onChange={(event) => setPlayersState({ ...player, position: event.target.value})}/>
 
-      <Button variant="contained" onClick={createPlayer}>Sign them up!
+      <Button variant="contained" onClick={handleFormSubmit}>Sign them up!
       </Button>
     </Box>
     </>
   );
 
     }
+
+    export default CreatePlayerForm;

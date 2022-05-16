@@ -10,11 +10,11 @@ const typeDefs = gql`
 
   type Player {
     _id: ID
-    firstname: String
-    surame: String
-    email: String
-    age: String
-    position: String
+    firstname: String!
+    surname: String!
+    email: String!
+    age: String!
+    position: String!
   }
 
   type Auth {
@@ -34,7 +34,7 @@ const typeDefs = gql`
   type Mutation {
     addProfile(name: String!, email: String!, password: String!): Auth
     login(email: String!, password: String!): Auth
-    createPlayer(firstname: String, surname: String, email: String, age: String, position: String): Player
+    CreatePlayer(firstname: String!, surname: String!, email: String!, age: String!, position: String!): Player
   }
 `;
 
