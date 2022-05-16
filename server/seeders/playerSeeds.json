@@ -26,5 +26,12 @@
         "age": "44",
         "email": "david@posh.com",
         "position": "Right Mid-Field"
+      },
+      {
+        "firstname": "Gianluigi",
+        "surname": "Buffon",
+        "age": "48",
+        "email": "buffon@keepers.com",
+        "position": "Keeper"
       }
     ]
