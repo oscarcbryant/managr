@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { DataGrid } from '@mui/x-data-grid';
 import { useNavigate } from 'react-router-dom';
+import { QUERY_PLAYERS } from '../../utils/queries';
+import { useQuery } from '@apollo/client'
 
 const columns = [
   { field: 'id', headerName: 'ID', width: 70 },
@@ -30,6 +32,9 @@ const rows = [
 ];
 
 export default function DataTable () {
+
+  const { loading, data } = useQuery(QUERY_PLAYERS)
+  console.log('showPlayer: ', data)
   return (
       <>
       <h2>All Players</h2>

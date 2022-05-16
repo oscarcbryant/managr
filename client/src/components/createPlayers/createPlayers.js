@@ -17,7 +17,9 @@ const [player, setPlayersState] = useState({
 
 });
 
-const [CreatePlayer, {error}] = useMutation(ADD_PLAYER);
+const [CreatePlayer, {error}] = useMutation(ADD_PLAYER, {
+
+});
 
 const handleFormSubmit = async (event) => {
   event.preventDefault();
