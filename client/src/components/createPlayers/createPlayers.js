@@ -4,6 +4,7 @@ import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import { ADD_PLAYER } from '../../utils/mutations';
 import { useQuery, useMutation } from '@apollo/client';
+import { QUERY_PLAYERS } from '../../utils/queries';
 
 
 const CreatePlayerForm = () => {
@@ -18,7 +19,19 @@ const [player, setPlayersState] = useState({
 });
 
 const [CreatePlayer, {error}] = useMutation(ADD_PLAYER, {
+update(cache, { data: {addProfile }}) {
+  try {
+    const { players } = cache.readQuery({ query: QUERY_PLAYERS });
 
+    cache.writeQuery({
+      query: QUERY_PLAYERS,
+      data: { players: [...players, CreatePlayer] },
+    });
+  }
+  catch (e) {
+    console.error(e);
+  }
+}
 });
 
 const handleFormSubmit = async () => {

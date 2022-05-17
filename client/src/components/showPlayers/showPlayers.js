@@ -44,8 +44,8 @@ export default function DataTable () {
             getRowId={(row) => row._id}
             rows={data?.players}
               columns={columns}
-              pageSize={5}
-              rowsPerPageOptions={[5]}
+              pageSize={11}
+              rowsPerPageOptions={[11]}
               checkboxSelection
             /> : 
             <h1>Loading...</h1>}
