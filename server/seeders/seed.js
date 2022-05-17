@@ -2,6 +2,7 @@ const db = require('../config/connection');
 const { Profile } = require('../models');
 const { Player } = require('../models');
 const profileSeeds = require('./profileSeeds.json');
+const playerSeeds = require('./playerSeeds.json');
 
 db.once('open', async () => {
   try {
