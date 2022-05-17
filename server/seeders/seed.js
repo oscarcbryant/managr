@@ -21,7 +21,7 @@ db.once('open', async () => {
     await Player.deleteMany({});
     await Player.insertMany(playerSeeds);
 
-    console.log('all done!');
+     console.log('all done!');
     process.exit(0);
   } catch (err) {
     throw err;
