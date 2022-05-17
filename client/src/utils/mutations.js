@@ -37,4 +37,12 @@ mutation CreatePlayer($firstname: String!, $surname: String!, $email: String!, $
     position
   }
 }`
+
+export const REMOVE_PLAYER = gql`
+mutation Mutation($playerId: ID!) {
+  removePlayer(playerId: $playerId) {
+    _id
+  }
+}
+`
 ;

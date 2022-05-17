@@ -19,7 +19,7 @@ const [player, setPlayersState] = useState({
 });
 
 const [CreatePlayer, {error}] = useMutation(ADD_PLAYER, {
-update(cache, { data: {addProfile }}) {
+update(cache, { data: { addProfile }}) {
   try {
     const { players } = cache.readQuery({ query: QUERY_PLAYERS });
 
@@ -47,6 +47,8 @@ const handleFormSubmit = async () => {
     console.error(err);
   }
 };
+
+
 
 
 

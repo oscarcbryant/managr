@@ -56,7 +56,11 @@ const resolvers = {
 
     CreatePlayer: async (parent, { firstname, surname, age, email, position }) => {
         return Player.create({ firstname, surname, age, email, position });
-    }
+    },
+
+    removePlayer: async (parent, { playerId }) => {
+        return Player.findOneAndDelete({ _id: playerId });
+      },
 
     },
 };
