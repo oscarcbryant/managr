@@ -16,9 +16,6 @@ function Navbar() {
                     <Link to = "./pages/Signup">Signup</Link>
                 </h4>
                 <h4>
-                    <Link to = "/contact">Create team</Link>
-                </h4>
-                <h4>
                     <Link to = "./pages/Home">Home</Link>
                 </h4>
                 <h4>
