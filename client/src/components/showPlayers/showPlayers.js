@@ -5,7 +5,7 @@ import { QUERY_PLAYERS } from '../../utils/queries';
 import { useQuery } from '@apollo/client'
 
 const columns = [
-  { field: 'id', headerName: 'ID', width: 70 },
+  { field: '_id', headerName: 'ID', width: 70 },
   { field: 'firstname', headerName: 'First name', width: 130 },
   { field: 'surname', headerName: 'Last name', width: 130 },
   { field: 'age', headerName: 'Age', type: 'number', width: 90 },
@@ -38,15 +38,18 @@ export default function DataTable () {
   return (
       <>
       <h2>All Players</h2>
-    <div style={{ height: 400, width: '100%' }}>
-      <DataGrid
-        rows={rows}
-        columns={columns}
-        pageSize={5}
-        rowsPerPageOptions={[5]}
-        checkboxSelection
-      />
-    </div>
+        <div style={{ height: 400, width: '100%' }}>
+            {data?.players ? 
+            <DataGrid
+            getRowId={(row) => row._id}
+            rows={data?.players}
+              columns={columns}
+              pageSize={5}
+              rowsPerPageOptions={[5]}
+              checkboxSelection
+            /> : 
+            <h1>Loading...</h1>}
+        </div>
     </>
   );
 }

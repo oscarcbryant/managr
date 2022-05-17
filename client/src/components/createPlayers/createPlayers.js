@@ -21,8 +21,7 @@ const [CreatePlayer, {error}] = useMutation(ADD_PLAYER, {
 
 });
 
-const handleFormSubmit = async (event) => {
-  event.preventDefault();
+const handleFormSubmit = async () => {
   console.log(player);
 
   try {
@@ -61,7 +60,7 @@ return (
       <TextField id="outlined-basic" label="Position" variant="outlined" value={player.position}
       onChange={(event) => setPlayersState({ ...player, position: event.target.value})}/>
 
-      <Button variant="contained" onClick={handleFormSubmit}>Sign them up!
+      <Button variant="contained" onClick={()=>handleFormSubmit()}>Sign them up!
       </Button>
     </Box>
     </>
