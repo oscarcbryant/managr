@@ -1,6 +1,6 @@
 # managr
 managr is a unique, full stack browser based application designed to help sports and community clubs manage activity, administrators and players. 
-managr's intent is to provide digitalisation of resource management at a local level, so that anyone who has a managerial role within a community club has simple and digital means to achieve such.
+managr's intent is to provide digitalisation of resource management at a local level, so that anyone who has a managerial role within a community club has simple and digital means to co-ordiante members of their organisations.
 
 ## User Story
 
