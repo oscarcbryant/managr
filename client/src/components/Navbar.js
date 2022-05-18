@@ -10,16 +10,16 @@ function Navbar() {
       <nav className="navbar">
             <div id="links">
                 <h4>
-                    <Link to = "./pages/Login">Login</Link>
+                    <Link to = "./pages/login">Login</Link>
                 </h4>
                 <h4>
-                    <Link to = "./pages/Signup">Signup</Link>
+                    <Link to = "./pages/signup">Signup</Link>
                 </h4>
                 <h4>
-                    <Link to = "./pages/Home">Home</Link>
+                    <Link to = "./pages/home">Home</Link>
                 </h4>
                 <h4>
-                    <Link to = "./pages/Landing" onClick={() => {Auth.logout()}}>Logout</Link>
+                    <Link to = "./pages/landing" onClick={() => {Auth.logout()}}>Logout</Link>
                 </h4>
             </div>
       </nav>
