@@ -6,5 +6,12 @@
 }
 
 .navbar {
-    background-color: grey;
+    background-color: white;
+    border-bottom: solid black 2px; 
+}
+
+a {
+    color: white;
+    text-decoration: underline;
+    margin: 1rem;
 }

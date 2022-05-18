@@ -1,4 +1,6 @@
 import React from 'react';
+import image from '../components/image.jpg';
+import '../components/styles/Landing.css'
 
 
 function Landing() {
@@ -9,6 +11,7 @@ function Landing() {
             {/* <Container>
                 <h1>Login</h1>
             </Container> */}
+            <img src={image} />
         </div>
     );
   }
