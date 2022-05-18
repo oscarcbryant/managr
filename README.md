@@ -34,7 +34,7 @@ so that it becomes easier to manage and oversee our activities.
 The application provides users with the ability to login and register an account. 
 Once logged in, they can access a pre-filled football team, although the user has the ability to add and remove players from this team.
 
-![Wireframe](Media/wireframe.png)
+![Wireframe](Media/wireframe.jpg)
 
 The team data itself is currently running from a Mongo backend database and we are connecting this data to the front end using
 - queries for reading and posting
@@ -69,5 +69,7 @@ This app was created and distributed by Oscar Bryant, student of the USYD Coding
 
 Oscar Bryant
 https://github.com/oscarcbryant
+
+Presentation Link
 
 Project submission date - May 19th, 2022
