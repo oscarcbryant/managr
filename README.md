@@ -1,6 +1,8 @@
 # managr
-managr is a unique, full stack browser based application designed to help sports and community clubs manage activity, administrators and players. 
-managr's intent is to provide digitalisation of resource management at a local level, so that anyone who has a managerial role within a community club has simple and digital means to co-ordiante members of their organisations.
+managr is a unique, full stack browser based application designed to help sports and community clubs manage activity, administration and players. 
+managr's intent is to provide digitalisation of resource management at a local level, so that anyone who has a managerial role within a community club has digital means to co-ordiante members of their team.
+Anyone can access managr - club, players and team managers can use the app to co-ordiante themselves and share information across the application on macro and micro level.
+Managr can even be used by people of all ages (adults, parents, teenagers), across all sports of all categories, making it a highly inclusive application ready to be onsumed by all! 
 
 ## User Story
 
@@ -31,21 +33,37 @@ so that it becomes easier to manage and oversee our activities.
 
 ## Description
 
-The application provides users with the ability to login and register an account. Once logged in, a pre-filled team is provided however the user has the ability to add and remove players from this team.
+The application provides users with the ability to login and register an account. 
+Once logged in, they can access a pre-filled football team, although the user has the ability to add and remove players from this team.
 
-![Wireframe](assets/Images/wireframe.png)
+![Wireframe](Media/wireframe.jpg)
 
-The team is currently running from a Mongo backend database and we are connecting this data to the front end using queries and manipulating this data using mutations. 
+The team data itself is currently running from a Mongo backend database and we are connecting this data to the front end using
+- queries for reading and posting
+- mutations for manipulation of data set
+
+![Form](Media/fromframe.jpg)
 
 
 ## Application
 
 The application can be accessed here: https://aqueous-hollows-72320.herokuapp.com/
 
-![Travel Planner Screenshot](assets/Images/TravelPlanner.png)
+![SignUp](Media/signup.jpg)
 
-## Usage
+![Show](Media/showplayer.jpg)
 
+## Technologies used
+
+- MongoDB - we elected this DB because we wanted to achieve seamless flow of json data between our front and backend
+- Express - open source framework, simplifies application build through routing and increases time of delivery
+- React - we want managr to be a single page application to enhance performance and improve user experience
+- Node - was elected as it is useful for full stack deployments and enables us to connect both front and backend
+
+- MUI Libraries - we were able to deploy active libraries to help with visual presentation of page and data
+
+![Create](Media/createplayer.jpg)
+Example above of the form that was set using the MUI Library.
 
 ## Contributors
 
@@ -53,3 +71,8 @@ This app was created and distributed by Oscar Bryant, student of the USYD Coding
 
 Oscar Bryant
 https://github.com/oscarcbryant
+
+Application walk through:
+https://docs.google.com/presentation/d/1I9nlVZJva2W8Eth3Nbh5ZT2IXIT7Dl2hJYAgooFw3lY/edit?usp=sharing
+
+Project submission date - May 19th, 2022
