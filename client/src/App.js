@@ -11,7 +11,7 @@ import Login from './pages/Login';
 import AppBar from './components/AppBar'
 import Home from './pages/Home';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
+import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 
 
 const client = new ApolloClient({
