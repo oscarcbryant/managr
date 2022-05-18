@@ -31,7 +31,7 @@ so that it becomes easier to manage and oversee our activities.
 
 ## Description
 
-The application provides users with the ability to login and register an account. Once logged in, a pre-filled team is given however the user has the ability to add and remove players from this team.
+The application provides users with the ability to login and register an account. Once logged in, a pre-filled team is provided however the user has the ability to add and remove players from this team.
 
 ![Wireframe](assets/Images/wireframe.png)
 
