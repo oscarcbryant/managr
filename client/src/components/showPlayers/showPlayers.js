@@ -66,18 +66,19 @@ export default function DataTable () {
     },
   ];
 
-  const [removePlayer] = useMutation(REMOVE_PLAYER, {
-    // update(cache, { data: { removePlayer } }) {
-    //   try {
-    //     cache.writeQuery({
-    //       query: QUERY_PLAYERS,
-    //       data: { players: [playerId, removePlayer]}
-    //     })
-    //   }
-    //   catch (e) {
-    //     console.error(e);
-    //   }
-    // }
+  const [removePlayer, { error }] = useMutation(REMOVE_PLAYER, {
+    update(cache, { data: { removePlayer } }) {
+      try {
+        const { players } = 
+        cache.writeQuery({
+          query: QUERY_PLAYERS,
+          data: { players: [...players, removePlayer]}
+        })
+  
+      }catch (e) {
+        console.error(e);
+      }
+    }
   });
   
   const handleRemovePlayer = async (id) => {
@@ -86,6 +87,7 @@ export default function DataTable () {
       const { data } = await removePlayer({
         variables: { playerId: id },
       });
+      window.location.reload();
     } catch (err) {
       console.error(err)
     }
