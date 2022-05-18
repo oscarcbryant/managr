@@ -1,6 +1,8 @@
 # managr
-managr is a unique, full stack browser based application designed to help sports and community clubs manage activity, administrators and players. 
-managr's intent is to provide digitalisation of resource management at a local level, so that anyone who has a managerial role within a community club has simple and digital means to co-ordiante members of their organisations.
+managr is a unique, full stack browser based application designed to help sports and community clubs manage activity, administration and players. 
+managr's intent is to provide digitalisation of resource management at a local level, so that anyone who has a managerial role within a community club has digital means to co-ordiante members of their team.
+Anyone can access managr - club, players and team managers can use the app to co-ordiante themselves and share information across the application on macro and micro level.
+Managr can even be used by people of all ages (adults, parents, teenagers), across all sports of all categories, making it a highly inclusive application ready to be onsumed by all! 
 
 ## User Story
 
@@ -58,10 +60,10 @@ The application can be accessed here: https://aqueous-hollows-72320.herokuapp.co
 - React - we want managr to be a single page application to enhance performance and improve user experience
 - Node - was elected as it is useful for full stack deployments and enables us to connect both front and backend
 
-- MUI Libraries - useful application - we were able to deploy active libraries to help with visual presentation of page and data
+- MUI Libraries - we were able to deploy active libraries to help with visual presentation of page and data
 
 ![Create](Media/createplayer.jpg)
-Example above of a form taken and build using the MUI Library.
+Example above of the form that was set using the MUI Library.
 
 ## Contributors
 
@@ -70,6 +72,7 @@ This app was created and distributed by Oscar Bryant, student of the USYD Coding
 Oscar Bryant
 https://github.com/oscarcbryant
 
-Presentation Link
+Application walk through:
+https://docs.google.com/presentation/d/1I9nlVZJva2W8Eth3Nbh5ZT2IXIT7Dl2hJYAgooFw3lY/edit?usp=sharing
 
 Project submission date - May 19th, 2022
