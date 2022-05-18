@@ -31,21 +31,37 @@ so that it becomes easier to manage and oversee our activities.
 
 ## Description
 
-The application provides users with the ability to login and register an account. Once logged in, a pre-filled team is provided however the user has the ability to add and remove players from this team.
+The application provides users with the ability to login and register an account. 
+Once logged in, they can access a pre-filled football team, although the user has the ability to add and remove players from this team.
 
-![Wireframe](assets/Images/wireframe.png)
+![Wireframe](Media/wireframe.png)
 
-The team is currently running from a Mongo backend database and we are connecting this data to the front end using queries and manipulating this data using mutations. 
+The team data itself is currently running from a Mongo backend database and we are connecting this data to the front end using
+- queries for reading and posting
+- mutations for manipulation of data set
+
+![Form](Media/fromframe.jpg)
 
 
 ## Application
 
 The application can be accessed here: https://aqueous-hollows-72320.herokuapp.com/
 
-![Travel Planner Screenshot](assets/Images/TravelPlanner.png)
+![SignUp](Media/signup.jpg)
 
-## Usage
+![Show](Media/showplayer.jpg)
 
+## Technologies used
+
+- MongoDB - we elected this DB because we wanted to achieve seamless flow of json data between our front and backend
+- Express - open source framework, simplifies application build through routing and increases time of delivery
+- React - we want managr to be a single page application to enhance performance and improve user experience
+- Node - was elected as it is useful for full stack deployments and enables us to connect both front and backend
+
+- MUI Libraries - useful application - we were able to deploy active libraries to help with visual presentation of page and data
+
+![Create](Media/createplayer.jpg)
+Example above of a form taken and build using the MUI Library.
 
 ## Contributors
 
@@ -53,3 +69,5 @@ This app was created and distributed by Oscar Bryant, student of the USYD Coding
 
 Oscar Bryant
 https://github.com/oscarcbryant
+
+Project submission date - May 19th, 2022
