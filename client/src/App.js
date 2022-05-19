@@ -40,6 +40,10 @@ function App() {
                     path="/pages/Home" 
                     element={<Home />}
                   />
+                  <Route
+                    path="/pages/Landing" 
+                    element={<Landing />}
+                  />
                 </Routes>
             {/* <Player />
           <Create /> */}
